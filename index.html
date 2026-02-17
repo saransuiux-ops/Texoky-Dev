@@ -5,10 +5,225 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Texoky - Engineering the Next Wave of Technology</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-   <p>Texoky - Engineering the Next Wave of Technology</p>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo">
+                <img src="assets/logo.png" alt="Texoky Logo" class="logo-img">
+            </a>
+            <nav class="nav">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#blog">Blog</a>
+            </nav>
+            <a href="#contact" class="btn btn-primary">Contact Us</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container hero-grid">
+            <div class="hero-content">
+                <h1>ENGINEERING THE NEXT <span class="text-gradient">WAVE OF TECHNOLOGY</span></h1>
+                <p>Innovative solutions, future-ready designs, and seamless tech experiences.</p>
+                <a href="#contact" class="btn btn-gradient">Get Started</a>
+            </div>
+            <div class="hero-image">
+                <img src="assets/hero-astronaut.png" alt="Futuristic AI Robot">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container about-grid">
+            <div class="about-content">
+                <span class="section-subtitle">About</span>
+                <h2>We make your <span class="text-primary">business stand out</span></h2>
+                <p>We work closely with our clients to know their objectives, target audience, unique needs, and
+                    practical design solutions.</p>
+
+                <div class="about-tabs">
+                    <button class="tab-btn active" data-tab="mission">Our Mission</button>
+                    <button class="tab-btn" data-tab="vision">Our Vision</button>
+                </div>
+
+                <div class="tab-content active" id="mission">
+                    <p>Our mission is to deliver meaningful, user-focused solutions that help businesses stand out and
+                        succeed.</p>
+                </div>
+                <div class="tab-content" id="vision">
+                    <p>Our vision is to empower brands with cutting-edge technology and design that withstands the test
+                        of time.</p>
+                </div>
+            </div>
+            <div class="about-image">
+                <img src="assets/about-montage.png" alt="Space Tech Montage">
+            </div>
+        </div>
+
+        <div class="container stats-container">
+            <div class="stat-item">
+                <h3>15+</h3>
+                <p>Years of Experience</p>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <h3>120k</h3>
+                <p>Successful Projects</p>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+                <h3>100%</h3>
+                <p>Client Satisfaction Rate</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Services</span>
+                <h2>Crafting impactful & innovative digital solutions tailored for your business.</h2>
+                <p>Our mission is to deliver meaningful, user-focused solutions that help businesses stand out and
+                    succeed.</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="card-image-wrapper">
+                        <img src="assets/service-salesforce.png" alt="Salesforce Services">
+                    </div>
+                    <h3>Salesforce Services</h3>
+                    <p>Optimizing your business processes with custom Salesforce solutions and integrations.</p>
+                </div>
+                <div class="service-card">
+                    <div class="card-image-wrapper">
+                        <img src="assets/service-snowflake.png" alt="Snowflake Services">
+                    </div>
+                    <h3>Snowflake Services</h3>
+                    <p>Unlocking data potential with scalable Snowflake cloud data warehousing.</p>
+                </div>
+                <div class="service-card">
+                    <div class="card-image-wrapper">
+                        <img src="assets/service-crm.png" alt="CRM Services">
+                    </div>
+                    <h3>CRM Services</h3>
+                    <p>Building stronger customer relationships through advanced CRM strategies and tools.</p>
+                </div>
+                <div class="service-card">
+                    <div class="card-image-wrapper">
+                        <img src="assets/service-appdev.png" alt="Application Development">
+                    </div>
+                    <h3>Application Development</h3>
+                    <p>Creating robust, user-centric web and mobile applications for your digital needs.</p>
+                </div>
+            </div>
+
+            <!-- Simple manual controls for visual fidelity to design -->
+            <div class="slider-controls">
+                <button class="slider-btn prev">❮</button>
+                <button class="slider-btn next">❯</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container contact-grid">
+            <div class="contact-info">
+                <span class="section-subtitle">Contact Us</span>
+                <h2>We make your <span class="text-primary">business stand out</span></h2>
+                <p>We work closely with our clients to know their objectives, target audience, unique needs, and
+                    practical design solutions.</p>
+
+                <ul class="contact-details">
+                    <li>
+                        <span class="icon">✉️</span> Info@texoky.in
+                    </li>
+                    <li>
+                        <span class="icon">🏠</span> 4074 Rod Summit Suite 375<br>Lake Leonardchester
+                    </li>
+                    <li>
+                        <span class="icon">📞</span> +44 123 654 7890
+                    </li>
+                </ul>
+            </div>
+            <div class="contact-form-wrapper">
+                <form class="contact-form" onsubmit="event.preventDefault(); alert('Message sent!');">
+                    <div class="form-group">
+                        <input type="text" placeholder="Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" placeholder="Mobile" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Message" rows="4" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-gradient full-width">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-brand">
+                <a href="#" class="logo">
+                    <img src="assets/logo.png" alt="Texoky Logo" class="logo-img">
+                </a>
+                <p>Info@texoky.in</p>
+                <p>+123 456 7891</p>
+                <div class="social-links">
+                    <a href="#">📷</a>
+                    <a href="#">💼</a>
+                    <a href="#">📘</a>
+                    <a href="#">🐦</a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h4>Blog</h4>
+                <a href="#">Company</a>
+                <a href="#">Careers</a>
+                <a href="#">Press</a>
+                <a href="#">Blog</a>
+            </div>
+            <div class="footer-links">
+                <h4>About</h4>
+                <a href="#">History</a>
+                <a href="#">Team</a>
+                <a href="#">Mission</a>
+                <a href="#">Values</a>
+            </div>
+            <div class="footer-links">
+                <h4>Product</h4>
+                <a href="#">Feature</a>
+                <a href="#">Pricing</a>
+                <a href="#">Login</a>
+                <a href="#">Signup</a>
+            </div>
+            <div class="footer-download">
+                <h4>Download App</h4>
+                <a href="#" class="store-btn">▶ Google Play</a>
+                <a href="#" class="store-btn">🍎 App Store</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
